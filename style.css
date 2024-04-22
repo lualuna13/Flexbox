@@ -1,3 +1,38 @@
+/* Resset Básico */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: darkmagenta;
+  
+}
+
+.container {
+  /* display: inline-flex;  se ajusta al ancho de los items */
+  display: flex; /* se ajusta al espcio disponible - Es más común de usar */
+  
+  flex-direction: row;  /* Valor por default, izq a Der */
+  /*flex-direction: row-reverse; /* va de derecha a izquierda */
+  /*flex-direction: column; /* Abajo hacia arriba */
+  /*flex-direction: column-reverse;  Arriba hacia abajo */
+
+  justify-content: start; /* Valor por default */
+  justify-content: end; /* alinea hacia el main end */
+  justify-content: center; /* alinea o distribuye al centro  */
+  justify-content: space-around; /* Distribuye asignando un espacio proporcional */
+  justify-content: space-evenly;
+  background-color: lightblue;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 32px;
+  border: 1px solid black;
 }
