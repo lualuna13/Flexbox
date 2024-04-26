@@ -1,0 +1,81 @@
+/* Resset Básico */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkmagenta;
+  
+}
+
+.container {
+  /* display: inline-flex;  se ajusta al ancho de los items */
+  display: flex; /* se ajusta al espcio disponible - Es más común de usar */
+  
+  flex-direction: row;  /* Valor por default, izq a Der */
+  /*flex-direction: row-reverse; /* va de derecha a izquierda */
+  /*flex-direction: column; /* Abajo hacia arriba */
+  /*flex-direction: column-reverse;  Arriba hacia abajo */
+
+  justify-content: start; /* Valor por default */ 
+  /*justify-content: end; /* alinea hacia el main end */
+  /*justify-content: center; /* alinea o distribuye al centro  */
+  /*justify-content: space-around; /* Distribuye asignando un espacio proporcional */
+  /*justify-content: space-evenly; Distribuye el espacio */
+
+  height: 500px; /* Damos altura para probar align-items */
+
+  /*align-items: flex-start; /* Alineacion hacia arr */
+  /*align-items: flex-end; /* alinea hacia abajo */
+  /*align-items: center; /* esto alinea al centro */
+  /*align-items: stretch; crece los elementos en el espacio disponible, Los items no deben tener alto definido */
+  /*align-items: baseline; Alinea los items en funcion de la base de datos*/
+
+
+  background-color: lightblue;
+}
+
+.item {
+  width: 100px;
+/* height: 100px; */
+  background-color: lightpink;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 32px;
+  border: 1px solid black;
+}
+
+/* Vamos a usar pseudoclases para seleccionar los items individualmente */
+
+.item:nth-child(1){
+  background-color: darkcyan;
+/*   font-size: 100px;*/
+justify-content: center;
+flex-direction: row-reverse;
+}
+
+.item:nth-child(2){
+  background-color: blueviolet;
+/*   font-size: 75px;*/
+justify-content: center;
+flex-direction: row-reverse;
+
+}
+
+.item:nth-child(3){
+  background-color: palevioletred;
+/*   font-size: 30px;*/
+justify-content: center;
+flex-direction: row-reverse;
+
+}
+
+.item:nth-child(4){
+  background-color: pink;
+/*   font-size: 52px;*/
+justify-content: center;
+flex-direction: row-reverse;
+
+}
