@@ -10,29 +10,42 @@ body {
 }
 
 .container {
-  /* display: inline-flex;  se ajusta al ancho de los items */
-  display: flex; /* se ajusta al espcio disponible - Es más común de usar */
-  
-  flex-direction: row;  /* Valor por default, izq a Der */
-  /*flex-direction: row-reverse; /* va de derecha a izquierda */
-  /*flex-direction: column; /* Abajo hacia arriba */
-  /*flex-direction: column-reverse;  Arriba hacia abajo */
-
-  justify-content: start; /* Valor por default */
-  justify-content: end; /* alinea hacia el main end */
-  justify-content: center; /* alinea o distribuye al centro  */
-  justify-content: space-around; /* Distribuye asignando un espacio proporcional */
-  justify-content: space-evenly;
+ 
+  display: flex;
   background-color: lightblue;
 }
 
+/* 
+Flex-Shrink -> esrta propiedad funciona un vfactor de contracción encojimiento, reduccion de los elementos de un contenedor flex.
+
+  Flex.shrink: 1; Este es el valor por default de los items, si no se declara esto es lo que aplica. 
+  Recibe valores numericos 
+*/
+
+
+
 .item {
-  width: 100px;
-  height: 100px;
-  background-color: lightpink;
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
   text-align: center;
   font-size: 24px;
-  font-weight: bold;
-  padding-top: 32px;
+  font-weight: bold;  
   border: 1px solid black;
+  background-color: lightpink;
+
+}
+ 
+.apachurro1{ 
+flex-shrink: 1;
+}
+
+.apachurro2 { 
+flex-shrink: 2;
+}
+.apachurro3 { 
+flex-shrink: 3;
+}
+.apachurro4 { 
+flex-shrink: 4;
 }
