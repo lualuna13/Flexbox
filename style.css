@@ -9,25 +9,35 @@ body {
   
 }
 
-.container {
- 
-  display: flex;
-  background-color: lightblue;
-}
-
 /* 
-Flex-Shrink -> esrta propiedad funciona un vfactor de contracción encojimiento, reduccion de los elementos de un contenedor flex.
+   Gap -> espacio entre los elementos.
 
-  Flex.shrink: 1; Este es el valor por default de los items, si no se declara esto es lo que aplica. 
-  Recibe valores numericos 
+   Recibe valores en números con unidades relativas o absolutas. 
+   Esta propiedad se pasa al contenedor
+
 */
 
 
 
+.container {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  /*gap: 24px;  Espacio entre los elementos */
+  /*gap: 3rem; /* unidades absolutas: px o relativas: em o rem */
+
+  column-gap: 16px; /* Espacio entre los elementos en la vertical*/
+
+  row-gap: 32px; /* Espacio entre los elementos en la horizontal */
+
+  gap: 10px 32px; /* Con dos valores, el primero es para espacio horizontal y el segundo para el espacio vertical */
+  
+  background-color: lightblue;
+}
+
 .item {
-  flex-basis: 200px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  width: 100px;
+  height: 100px;
   text-align: center;
   font-size: 24px;
   font-weight: bold;  
@@ -36,16 +46,3 @@ Flex-Shrink -> esrta propiedad funciona un vfactor de contracción encojimiento,
 
 }
  
-.apachurro1{ 
-flex-shrink: 1;
-}
-
-.apachurro2 { 
-flex-shrink: 2;
-}
-.apachurro3 { 
-flex-shrink: 3;
-}
-.apachurro4 { 
-flex-shrink: 4;
-}
