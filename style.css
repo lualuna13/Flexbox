@@ -20,18 +20,12 @@ body {
 
 
 .container {
-  width: 500px;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
-  /*gap: 24px;  Espacio entre los elementos */
-  /*gap: 3rem; /* unidades absolutas: px o relativas: em o rem */
+  align-items: center;
+  justify-content: space-between;
 
-  column-gap: 16px; /* Espacio entre los elementos en la vertical*/
-
-  row-gap: 32px; /* Espacio entre los elementos en la horizontal */
-
-  gap: 10px 32px; /* Con dos valores, el primero es para espacio horizontal y el segundo para el espacio vertical */
-  
   background-color: lightblue;
 }
 
